@@ -1,4 +1,4 @@
-url = "https://script.google.com/macros/s/AKfycbxUqJcASxavcTZ5muaJIG2-i_c3AOkQh2gjunijnCcdEs2FYEb48GgCFozsOqFNCSpW/exec"
+url = "https://script.google.com/macros/s/AKfycbzD7ANAUGgwZHKATjLzJuvW-RWLj9s7CH4GE7IhqcYlgrvfGxre8NnuReaIr5Al0ZnX/exec"
 msgs = [
     "You're on track!",
     "Keep going!",
