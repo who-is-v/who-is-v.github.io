@@ -2,15 +2,16 @@
 <html>
 <head>
     <meta charset="UTF-8" />
-    <title>Puzzle</title>
+    <title>Who is V?</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Icon.png">
 </head>
 <body>
     <div id="blur" style="backdrop-filter: blur(10px);"><h1 id="waitingMsg"></h1></div>
     <div id="mainWrapper">
         <h1 id="question" style="color: transparent"></h1>
         <div id="inputWrapper">
-            <input id="questionInput" autocomplete="off" type="text" maxlength="0" onkeyup="if (this.value[0] != ' ')this.value = ' ' + this.value; this.value = this.value.substring(0,this.maxLength);" onkeydown="if(event.target.selectionStart == event.target.selectionEnd) event.target.selectionEnd += 1" value=" " style="width: 0px;">
+            <input id="questionInput" autocomplete="off" type="text" maxlength="0" onkeydown="OnInputKeyDown(this, event);" value=" " style="width: 0px;">
             <button disabled="true" id="submitButton" onclick="submitAnswer()"><svg style="stroke:transparent" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" id="icon"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg></button>
         </div>
     </div>
